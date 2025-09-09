@@ -19,5 +19,21 @@ public class iteration {
             k++;
         } while (k <= 4);
 
+        //for loop
+        System.out.println("for loop");
+        for (int l=0;l<30;l++)
+        {
+            System.out.println("Hi " + (l+1));
+        }
+
+        //calender planner
+        for (int l=0;l<5;l++)
+        {
+            System.out.println("DAY " + (l+1));
+            for ( int m = 9; m<=17; m++ ){
+                System.out.println("  " + m + ".00-" + (m+1) + ".00");
+            }
+        }
+
     }
 }
