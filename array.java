@@ -61,10 +61,14 @@ public class array {
         studentsarray[0] = s1;
         studentsarray[1] = s2;
         studentsarray[2] = s3;
-        for(int i = 0; i<studentsarray.length; i++)
-        {
+        for (int i = 0; i < studentsarray.length; i++) {
             System.out.println(studentsarray[i].name + " : " + studentsarray[i].marks);
         }
 
+        // enhanced for loop
+        System.out.println("Enhanced for loop");
+        for (student s : studentsarray) {
+            System.out.println(s.name + " : " + s.marks);
+        }
     }
 }
