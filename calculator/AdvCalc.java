@@ -1,3 +1,4 @@
+package calculator;
 public class AdvCalc extends Calc{
     public int mult(int n1, int n2)
     {
