@@ -1,20 +1,24 @@
 enum Day {
-    SUNDAY, MONDAY("light blue"), TUESDAY("dark blue"), WEDNESDAY("orange"), THURSDAY("light blue"), FRIDAY("dark blue"), SATURDAY;
+    SUNDAY, MONDAY("light blue"), TUESDAY("dark blue"), WEDNESDAY("orange"), THURSDAY("light blue"),
+    FRIDAY("dark blue"), SATURDAY;
 
+    private String color;
 
-private String color;
-public String getColor() {
-    return color;
-}
-public void setColor(String color) {
-    this.color = color;
-}
-private Day() {
-this.color = "red";
-}
-private Day(String color) {
-    this.color = color;
-}
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    private Day() { //private constructor because objects are in the same class
+        this.color = "red";
+    }
+
+    private Day(String color) { //private constructor because objects are in the same class
+        this.color = color;
+    }
 
 }
 
