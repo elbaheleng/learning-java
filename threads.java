@@ -1,4 +1,8 @@
-class A extends Thread{
+class Z{
+    
+}
+
+class A extends Z implements Runnable{ //A extends Z so cant extend Thread class, hence implement runnable interface
     public void run()
     {
         for (int index = 0; index < 100; index++) {
@@ -16,10 +20,12 @@ class B extends Thread{
 }
 public class threads {
     public static void main(String[] args) {
-        A ob1 = new A();
-        B ob2 = new B();
 
-        ob1.start();
+        Runnable ob1 = new A(); 
+        Thread t = new Thread(ob1); // connection between thread and A, then only start() will work
+        t.start();
+
+        B ob2 = new B();
         ob2.start();
 
 
