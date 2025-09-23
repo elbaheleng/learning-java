@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
+//import java.util.function.Consumer;
 
 public class foreach {
     public static void main(String[] args) {
@@ -15,8 +15,6 @@ public class foreach {
         //nums.forEach(com);
 
         //OR
-            
-
         nums.forEach(n -> System.out.println(n));
     }
 }
