@@ -1,0 +1,31 @@
+package com.elbaheleng;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SortingArrayTest {
+
+	@Test
+	void testSortingArray_Exception() {
+//		try {
+//			SortingArray array = new SortingArray();
+//			int unsorted[] = {1,2,3};
+//			int sorted[] = array.sortingArray(unsorted);
+//			for(int elem:sorted) {
+//				System.out.println(elem);
+//			}
+//			fail();
+//		}
+//		catch(NullPointerException e) {
+//			System.out.println("Exception generated");
+//		}
+		
+		//OR
+		
+		SortingArray array = new SortingArray();
+		int unsorted[] = null;
+		assertThrows(NullPointerException.class,()-> array.sortingArray(unsorted));
+	}
+
+}

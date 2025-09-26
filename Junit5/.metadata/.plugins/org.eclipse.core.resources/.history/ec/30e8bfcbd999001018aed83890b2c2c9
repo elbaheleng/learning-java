@@ -1,0 +1,15 @@
+package com.elbaheleng;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalcTest {
+
+	@Test
+	public void test() {
+		assertEquals("Java","Java");
+		
+	}
+
+}

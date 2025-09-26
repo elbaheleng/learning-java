@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;com.elbaheleng.Shapes.computeSquareArea(...).res&apos; in &apos;com.elbaheleng.Shapes.computeSquareArea(...)&apos;&#x0D;&#x0A;- Original project: &apos;junit4&apos;&#x0D;&#x0A;- Original element: &apos;com.elbaheleng.Shapes.computeSquareArea(...).res&apos;" description="Inline local variable &apos;res&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;com.elbaheleng{Shapes.java" selection="139 0" stamp="1758791379886" version="1.0"/>
+</session>

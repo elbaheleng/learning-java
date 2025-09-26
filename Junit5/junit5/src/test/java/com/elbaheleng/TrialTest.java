@@ -1,0 +1,34 @@
+package com.elbaheleng;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TrialTest {
+
+	@Test
+	void test() {
+		assertEquals(6,6);
+	}
+	Shapes shape = new Shapes();
+
+	@Test
+	void testcomputeSquareArea() {
+		assertEquals(576, shape.computeSquareArea(24),"Area of square is wrong");
+	}
+	@Test
+	void testcomputeCircleArea() {
+		assertEquals(78.5, shape.computeCircleArea(5),"Area of circle is wrong");
+	}
+	@Test
+	void testcomputeCircleArea_Supplier() {
+		assertEquals(78.5, shape.computeCircleArea(5),()->"Area of circle is wrong");
+	}
+	
+	@Test
+	void testArrays() {
+		int []expected = {1,2,3};
+		int []actual = {1,2,3};
+		assertArrayEquals(expected,actual);
+	}
+}
